@@ -1,6 +1,7 @@
 import geometry.Circle;
 import geometry.ColoredCircle;
 import geometry.Point;
+import geometry.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class Main {
         circles[2] = new ColoredCircle(new Point(2, 2), 3, "Yellow");
         circles[3] = new ColoredCircle(new Point(3, 3), 4, "Blue");
         circles[4] = new ColoredCircle(new Point(4, 4), 5, "Green");
+        Rectangle rectangle = new Rectangle(10.0, 8.0);
 
         point.setX(1.5);
         point.setY(2.5);
@@ -34,6 +36,9 @@ public class Main {
                 System.out.println(((ColoredCircle) c).getColor());
             }
         }
+
+        System.out.println(rectangle.calculateArea());
+        System.out.println(rectangle.calculatePerimeter());
     }
 }
 
